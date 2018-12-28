@@ -34,8 +34,8 @@ from .drdo_tracker_dialog import DrdoTrackerDialog
 import os.path
 
 
-#print('hhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
 
+#print('hhhhhhhhhhhhh')
 class DrdoTracker:
     """QGIS Plugin Implementation."""
 
@@ -199,6 +199,7 @@ class DrdoTracker:
 
     def run(self):
         """Run method that performs all the real work"""
+        print('hello world')
         layers = [tree_layer.layer() for tree_layer in QgsProject.instance().layerTreeRoot().findLayers()]
         layer_list = []
         for layer in layers:
